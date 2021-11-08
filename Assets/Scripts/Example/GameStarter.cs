@@ -1,4 +1,4 @@
-using RolePlayer.SaveLoad;
+using RolePlayer.UI.WindowService;
 using UnityEngine;
 using Zenject;
 
@@ -6,20 +6,17 @@ namespace RolePlayer
 {
   public class GameStarter : MonoBehaviour
   {
-    public ExampleView ExampleView;
-
-    private ISaveLoadService _saveLoadService;
+    private IWindowService _windowService;
 
     [Inject]
-    public void Construct(ISaveLoadService saveLoadService)
+    public void Construct(IWindowService windowService)
     {
-      _saveLoadService = saveLoadService;
+      _windowService = windowService;
     }
 
     private void Start()
     {
-      _saveLoadService.Register(ExampleView);
-      _saveLoadService.Load();
+      _windowService.Show(WindowId.Example);
     }
   }
 }

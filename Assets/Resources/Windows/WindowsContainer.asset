@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54eeb138559246ec947596b0a20b06ef, type: 3}
+  m_Name: WindowsContainer
+  m_EditorClassIdentifier: 
+  _configs:
+  - Name: Example
+    WindowId: 1
+    Prefab: {fileID: 2434774230687780683, guid: fe058760e92af91409aefac257b032ac, type: 3}
+  - Name: Example2
+    WindowId: 2
+    Prefab: {fileID: 1736403489103053398, guid: 6f45c281fc00cc94b977e491dd087c48, type: 3}
+  - Name: Example3
+    WindowId: 3
+    Prefab: {fileID: 1073462327265443464, guid: dfeab16c4a90de54284f2d3387a25195, type: 3}
+  - Name: Example4NotStack
+    WindowId: 4
+    Prefab: {fileID: 7462907731457654504, guid: 7b24816550a987c4b885fa9a97d7a8ab, type: 3}
