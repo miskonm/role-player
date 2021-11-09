@@ -10,10 +10,16 @@ namespace RolePlayer.Game.Elements
 
     public ObserverList<IHealthChanged> OnHealthChanged { get; } = new ObserverList<IHealthChanged>();
 
+    public void Setup(int hp)
+    {
+      Max = hp;
+      Current = Max;
+      NotifyHealthChanged();
+    }
+
     public void DoDamage(int damage)
     {
       Current -= damage;
-
       NotifyHealthChanged();
     }
 
