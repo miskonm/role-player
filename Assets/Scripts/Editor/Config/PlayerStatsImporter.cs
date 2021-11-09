@@ -33,6 +33,8 @@ namespace Course.Editor.Config
       asset.MoveSpeed = float.Parse(values[1][1].ToString());
       AssetDatabase.CreateAsset(asset, "Assets/Config/PlayerStaticData.asset");
       AssetDatabase.SaveAssets();
+      
+      await Progress(1);
     }
 
     [MenuItem("Tools/Import Player Stats", false, 1100)]

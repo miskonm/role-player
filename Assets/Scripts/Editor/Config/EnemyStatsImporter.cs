@@ -33,6 +33,8 @@ namespace Course.Editor.Config
       asset.Cooldown = float.Parse(values[1][1].ToString());
       AssetDatabase.CreateAsset(asset, "Assets/Config/EnemyStaticData.asset");
       AssetDatabase.SaveAssets();
+      
+      await Progress(1);
     }
 
     [MenuItem("Tools/Import Enemy Stats", false, 1100)]
