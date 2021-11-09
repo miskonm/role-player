@@ -1,5 +1,4 @@
-using Course.Base;
-using Course.Observers;
+using Foundation;
 
 namespace RolePlayer.Game.Elements
 {

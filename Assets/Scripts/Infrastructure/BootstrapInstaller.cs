@@ -1,6 +1,4 @@
-using Course.Managers.LocalizationManager;
-using Course.Managers.SceneManager;
-using Course.Managers.TimeScaleManager;
+using Foundation;
 using RolePlayer.Infrastructure.AssetManagement;
 using RolePlayer.SaveLoad;
 using RolePlayer.UI.WindowService;

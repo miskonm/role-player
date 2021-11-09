@@ -1,7 +1,7 @@
-using Course.Base;
-using Course.Managers.SceneManager;
+using Foundation;
 using RolePlayer.Game.Elements;
 using RolePlayer.Game.Player;
+using RolePlayer.Infrastructure.SceneManagement;
 using Zenject;
 
 namespace RolePlayer.Game.Manager

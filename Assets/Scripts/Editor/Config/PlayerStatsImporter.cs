@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Course.Managers.LocalizationManager;
+using Foundation.Editor;
 using RolePlayer.Game.StaticData;
 using UnityEditor;
 using UnityEngine;

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
-using Course.Base;
-using Course.Managers.SceneManager;
+using Foundation;
+using RolePlayer.Infrastructure.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
