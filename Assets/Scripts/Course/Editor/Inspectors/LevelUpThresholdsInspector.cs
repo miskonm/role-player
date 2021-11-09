@@ -1,8 +1,8 @@
 using Course.Managers.ExperienceManager;
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-namespace Foundation.Editor
+namespace Course.Editor.Inspectors
 {
     [CustomEditor(typeof(LevelUpThresholds))]
     public sealed class LevelUpThresholdsEditor : UnityEditor.Editor

@@ -1,11 +1,9 @@
-using UnityEngine;
-using UnityEditor;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using Course.Utility;
+using UnityEditor;
+using UnityEngine;
 
-namespace Foundation.Editor
+namespace Course.Editor.Inspectors
 {
     [CustomEditor(typeof(Thumbnail))]
     [CanEditMultipleObjects]

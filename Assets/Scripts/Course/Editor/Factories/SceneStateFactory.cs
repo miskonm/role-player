@@ -1,15 +1,12 @@
-using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
-using UnityEditor;
-using UnityEditor.Events;
-using System;
 using System.Collections.Generic;
 using Course.Managers.SceneStateManager.Canvas;
 using Course.Managers.SceneStateManager.State;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
-namespace Foundation.Editor
+namespace Course.Editor.Factories
 {
     public static class SceneStateFactory
     {

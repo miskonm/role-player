@@ -1,9 +1,9 @@
 using System;
 using Course.Managers.LocalizationManager;
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-namespace Foundation.Editor
+namespace Course.Editor.Drawers
 {
     [CustomPropertyDrawer(typeof(LocalizedString))]
     public sealed class LocalizedStringDrawer : PropertyDrawer

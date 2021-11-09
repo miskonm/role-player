@@ -1,8 +1,8 @@
 using Course.Attributes;
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-namespace Foundation.Editor
+namespace Course.Editor.Drawers
 {
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
     public sealed class ReadOnlyDrawer : PropertyDrawer

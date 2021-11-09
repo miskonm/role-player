@@ -15,7 +15,7 @@ namespace Course.Managers.LocalizationManager
             public string[] Strings;
         }
 
-        [SerializeField] [HideInInspector] List<StringInfo> Strings;
+        [SerializeField]  List<StringInfo> Strings;
         public Dictionary<string, Dictionary<Language, string>> TranslatedStrings;
 
         public string GetLocalization(LocalizedString str, Language language)
