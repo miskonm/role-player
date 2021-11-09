@@ -2,7 +2,7 @@ using RolePlayer.UI.WindowService;
 using UnityEngine;
 using Zenject;
 
-namespace RolePlayer
+namespace RolePlayer.Example
 {
   public class GameStarter : MonoBehaviour
   {

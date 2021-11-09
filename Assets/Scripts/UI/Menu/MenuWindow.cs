@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace RolePlayer
+namespace RolePlayer.UI.Menu
 {
   public class MenuWindow : AbstractBehaviour, IOnBeginSceneLoad
   {

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace RolePlayer
+namespace RolePlayer.Example
 {
   public class ExampleView : MonoBehaviour, ISaveLoadProgress
   {
