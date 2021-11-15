@@ -10,6 +10,8 @@ namespace Course.Editor.Config
 {
   public class EnemyStatsImporter : AbstractConfigImporter
   {
+    private const string AssetPath = "Assets/Configs/StaticData/EnemyStaticData.asset";
+
     public EnemyStatsImporter() : base("1WhQl6dVvSLiR5iezh5otcrdb9aMKiwEZXTrDSf0mVcY", "Enemies")
     {
     }
@@ -31,9 +33,9 @@ namespace Course.Editor.Config
       var asset = ScriptableObject.CreateInstance<EnemyStaticData>();
       asset.Damage = int.Parse(values[0][1].ToString());
       asset.Cooldown = float.Parse(values[1][1].ToString());
-      AssetDatabase.CreateAsset(asset, "Assets/Config/EnemyStaticData.asset");
+      AssetDatabase.CreateAsset(asset, AssetPath);
       AssetDatabase.SaveAssets();
-      
+
       await Progress(1);
     }
 

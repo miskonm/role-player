@@ -10,6 +10,8 @@ namespace Course.Editor.Config
 {
   public class PlayerStatsImporter : AbstractConfigImporter
   {
+    private const string AssetPath = "Assets/Configs/StaticData/PlayerStaticData.asset";
+
     public PlayerStatsImporter() : base("1WhQl6dVvSLiR5iezh5otcrdb9aMKiwEZXTrDSf0mVcY", "Player")
     {
     }
@@ -31,7 +33,7 @@ namespace Course.Editor.Config
       var asset = ScriptableObject.CreateInstance<PlayerStaticData>();
       asset.Hp = int.Parse(values[0][1].ToString());
       asset.MoveSpeed = float.Parse(values[1][1].ToString());
-      AssetDatabase.CreateAsset(asset, "Assets/Config/PlayerStaticData.asset");
+      AssetDatabase.CreateAsset(asset, AssetPath);
       AssetDatabase.SaveAssets();
       
       await Progress(1);
